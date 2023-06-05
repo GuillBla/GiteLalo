@@ -1,0 +1,121 @@
+/* styles.css */
+
+/* Réinitialisation des marges et des paddings */
+body,
+h1,
+h2,
+p,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ajout de marges globales */
+.container {
+    margin: 20px auto;
+    /* Centrer horizontalement */
+    max-width: 1200px;
+    /* Largeur maximale du container */
+}
+
+
+/* Style de l'en-tête */
+h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 30px;
+    background-color: #00796B;
+    color: #fff;
+}
+
+/* Style de l'image principale */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    /* Espacement autour de l'image */
+}
+
+.image-section img {
+    max-width: 50%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+/* Effet de zoom sur l'image principale au survol de la souris */
+.image-section img:hover {
+    transform: scale(1.1);
+}
+
+/* Style des images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style des sections */
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Style des liens */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style des images de la grille */
+.grid {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 1s;
+    margin: 0 auto;
+
+}
+
+
+/* Effet de zoom sur l'image au survol de la souris */
+.grid-item img:hover {
+    transform: scale(1.8);
+}
+
+#map {
+    height: 400px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
