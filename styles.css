@@ -11,26 +11,41 @@ img {
     box-sizing: border-box;
 }
 
+
+.body-bg-image {
+    background-image: url("images/background2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Ajout de marges globales */
 .container {
-    margin: 20px auto;
+    margin: 20px auto ;
     /* Centrer horizontalement */
-    max-width: 1200px;
-    /* Largeur maximale du container */
+    max-width: 1800px;
+
+    /* background-color:("images/wood_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: #F9E0BB;
+    padding: 20px; /* Ajoute de l'espace intérieur autour des éléments du container */
+    border-radius: 10px;
 }
 
 
 /* Style de l'en-tête */
 h1 {
     font-size: 75px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding: 30px;
-    background-color: #00796B;
+    background-color: #884A39;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 h1 img {
@@ -41,9 +56,6 @@ h1 img {
     margin-left: 10px;
     /* Add margin between the title and the logo */
 }
-
-
-
 
 
 
@@ -64,6 +76,13 @@ h1 img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     transition: transform 0.3s;
+    /* Ajout de l'image de fond */
+    background-image: url("images/wood_background2.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Ajout de coins arrondis */
+    border-radius: 10px;
+
 }
 
 /* Effet de zoom sur l'image principale au survol de la souris */
@@ -84,11 +103,13 @@ h2 {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 10px;
+    color:#038d1a;
 }
 
 p {
     margin-bottom: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
 }
 
 /* Style des liens */
@@ -121,6 +142,12 @@ a:hover {
     object-fit: contain;
     transition: transform 1s;
     margin: 0 auto;
+    /* Ajout de l'image de fond */
+    background-image: url("images/wood_background2.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Ajout de coins arrondis */
+    border-radius: 10px;
 
 }
 
