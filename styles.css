@@ -9,18 +9,21 @@ img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'GrotleyRegular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 
 .body-bg-image {
     background-image: url("images/background2.jpg");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* Ajout de marges globales */
 .container {
-    margin: 20px auto ;
+    margin: 20px auto;
     /* Centrer horizontalement */
     max-width: 1800px;
 
@@ -29,7 +32,8 @@ img {
     background-position: center;
     background-repeat: no-repeat; */
     background-color: #F9E0BB;
-    padding: 20px; /* Ajoute de l'espace intérieur autour des éléments du container */
+    padding: 20px;
+    /* Ajoute de l'espace intérieur autour des éléments du container */
     border-radius: 10px;
 }
 
@@ -37,7 +41,6 @@ img {
 /* Style de l'en-tête */
 h1 {
     font-size: 75px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding: 30px;
     background-color: #884A39;
@@ -103,7 +106,7 @@ h2 {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 10px;
-    color:#038d1a;
+    color: #038d1a;
 }
 
 p {
@@ -162,4 +165,36 @@ a:hover {
     width: 400px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+
+/* Styles pour la section "Les choses à faire autour" */
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styles pour chaque sous-section de vidéo */
+.video-wrapper {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Mise en page pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .video-wrapper {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+
+
+
+
+@font-face {
+    font-family: 'GrotleyRegular';
+    src: url('grotley-font/GrotleyRegular-mLEWv.otf') format('truetype');
 }
