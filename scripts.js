@@ -1,8 +1,6 @@
 // scripts.js
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Initialisation de Lightbox
-  const lightbox = new SimpleLightbox('.grid-item a');
 
   // Empêcher le comportement par défaut des liens d'images
   const imageLinks = document.querySelectorAll('.grid-item a');
@@ -13,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-// Code pour afficher la carte OpenStreetMap avec la position du gîte
 
 // Coordonnées du gîte (exemple)
 var latitude = 45.079249;
@@ -28,5 +24,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-// Ajout du marqueur pour la position du gîte
-L.marker([latitude, longitude]).addTo(map);
+// Définition de l'icône personnalisée pour le marqueur
+var customIcon = L.icon({
+  iconUrl: 'images/logo_gite_de_france.png',
+  iconSize: [50, 50], // Ajustez la taille de l'icône
+  iconAnchor: [16, 16], // Ajustez le point d'ancrage de l'icône
+});
+
+// Ajout du marqueur personnalisé pour la position du gîte
+L.marker([latitude, longitude], { icon: customIcon }).addTo(map);
+

@@ -22,13 +22,30 @@ img {
 
 /* Style de l'en-tête */
 h1 {
-    font-size: 50px;
+    font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 30px;
     background-color: #00796B;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+h1 img {
+    height: 150px;
+    /* Adjust the height as needed */
+    width: auto;
+    /* Maintain the aspect ratio */
+    margin-left: 10px;
+    /* Add margin between the title and the logo */
+}
+
+
+
+
+
 
 /* Style de l'image principale */
 .image-section {
